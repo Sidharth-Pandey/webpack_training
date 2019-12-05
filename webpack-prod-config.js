@@ -9,7 +9,7 @@ module.exports = merge(common, {
     /* filename: "hello.js",
     path : path.resolve(__dirname, "myfolder")*/
     /*filename: "main.js",*/
-    filename: "main.[contentHash].js",
+    filename: "[name].[contentHash].bundle.js",
     path : path.resolve(__dirname, "dist")
   },
   plugins: [

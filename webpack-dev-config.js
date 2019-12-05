@@ -8,7 +8,7 @@ module.exports = merge(common, {
     /* filename: "hello.js",
     path : path.resolve(__dirname, "myfolder")*/
     /*filename: "main.js",*/
-    filename: "main.js",
+    filename: "[name].bundle.js",
     path : path.resolve(__dirname, "dist")
   }
 });

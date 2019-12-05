@@ -6,5 +6,4 @@ import ComponentService from './app/component.service.js';
 const alertServices = new AlertService();
 const componentService = new ComponentService();
 
-console.log("this is me");
 run(componentService, alertServices);

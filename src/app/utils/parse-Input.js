@@ -1,3 +1,3 @@
-const parseInput =(...input)=>{
+export const parseInput =(...input)=>{
   return input.map((val)=> parseInt(val));
 };

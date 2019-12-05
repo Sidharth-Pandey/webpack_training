@@ -3,7 +3,7 @@ class ComponentService{
     this.input1 = document.getElementById('no1');
     this.input2 = document.getElementById('no2');
     this.addButton = document.getElementById('addBtn');
-    this.outPut =  document.getElementById('output');
+    this.output =  document.getElementById('output');
   }
 
   getInput (){
@@ -11,7 +11,7 @@ class ComponentService{
   }
 
   setResult (str) {
-    this.outPut.value = str;
+    this.output.value = str;
   }
 
   onClick (cb){
@@ -19,3 +19,4 @@ class ComponentService{
   }
 
 }
+export default ComponentService;

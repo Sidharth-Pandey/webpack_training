@@ -1,7 +1,9 @@
-const alertServices = new AlertServices();
-const componentService = new ComponentService();
+import {isInputValid} from './utils/input-valid.js';
+import {parseInput} from './utils/parse-input.js';
 
-const run = (componentService, alertServices) =>{
+
+
+export const run = (componentService, alertServices) =>{
 alertServices.hideErrors();
 componentService.onClick(()=>{
   const inputs = componentService.getInput();
@@ -11,8 +13,5 @@ componentService.onClick(()=>{
   } else {
     alertServices.handleError(inputs,parsedInput)
   }
-
-})
-
+  })
 }
-run(componentService, alertServices);

@@ -1,3 +1,5 @@
+import {isInputValid} from './utils/input-valid.js';
+
 class AlertServices {
   constructor(){
     this.errorBox = document.getElementById('error');
@@ -19,3 +21,4 @@ class AlertServices {
     this.errorBox.classList.remove("invisible");
   }
 }
+export default AlertServices;
